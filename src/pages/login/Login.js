@@ -13,15 +13,19 @@ export default function Login() {
   const [sHeight, setsHeight] = useState(window.innerHeight)
   const [sWidth, setsWidth] = useState(window.innerWidth)
   const [loading, setLoading] = useState(false)
+  // function changeSize() {
+  //   setsHeight(window.innerHeight),
+  //     setsWidth(window.innerWidth)
+  // }
   // React.useEffect(() => {
   //   if (typeof window !== 'undefined') {
-  //     setsHeight(window.innerHeight)
-  //     setsWidth(window.innerWidth)
+  //     changeSize()
   //   }
   //   console.log('local', localStorage.getItem('userId'), localStorage.getItem('token'), localStorage.getItem('role'), localStorage.getItem('manageOpenKeys'), localStorage.getItem('manageSelectItem'),)
   //   return () => {
-  //     setsHeight(window.innerHeight)
-  //     setsWidth(window.innerWidth)
+  //     if (typeof window !== 'undefined') {
+  //       changeSize()
+  //     }
   //   }
   // }, [])
   return (
