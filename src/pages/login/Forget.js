@@ -5,9 +5,25 @@ export default function Forget() {
     const [sWidth] = useState(window.innerWidth);
     const [sHeight] = useState(window.innerHeight);
     const [showData, setShowData] = useState(true);
-    React.useEffect(() => {
+    // React.useEffect(() => {
+    // })
+    // function show() {
+    //     if (showData === true) {
+    //         setShowData(false)
+    //     }
+    //     else {
+    //         setShowData(true)
+    //     }
+    // }
+    // submit = (age,()=>{
 
-    })
+    // },
+    // ()=>{
+
+    // })
+    // login = ()=>{
+
+    // }
     return (
         <div>
             <div className='container' style={{
@@ -69,11 +85,11 @@ export default function Forget() {
                     }}>
                         <div className='title'><h1>比较</h1></div>
                         <button className='cbtn' onClick={() => {
-                            if (showData === 'false') {
-                                setShowData(true)
+                            if (showData === true) {
+                                setShowData(false)
                             }
                             else {
-                                setShowData(false)
+                                setShowData(true)
                             }
                         }} style={{
                             position: 'absolute',
@@ -86,6 +102,7 @@ export default function Forget() {
                         }}>对比</button>
                         <div className='triangle' style={{
                             position: 'absolute',
+                            display: showData ? 'flex' : 'none',
                             top: 45,
                             right: 40,
                             width: 0,
